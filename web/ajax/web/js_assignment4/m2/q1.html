@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function f()
+{
+var a=new Date();
+var d=a.getDay();
+var t=a.getHours();
+document.getElementById("q").innerHTML=a;
+document.getElementById("d").innerHTML=d;
+document.getElementById("t").innerHTML=t;
+}
+</script>
+
+</head>
+<body>
+<span>data :</span><span  id="q"></span><p>
+<span>day :</span><span id="d"></span><p>
+<span>hourse :</span><span id="t"></span><p>
+<input type="button" onclick="f()"/>
+
+</body>
+</html>

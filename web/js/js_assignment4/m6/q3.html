@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function f()
+{
+var a=prompt("enter the string");
+
+var o=new Object();
+o.first=a.substring(0,1);
+console.log(o);
+o.second=a.substring(0,2);
+console.log(o);
+o.third=a.substring(0,a.length);
+console.log(o);
+o.fourth=a.substring(2,3);
+console.log(o);
+
+
+
+}
+
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="abc" onclick="f()"/>
+</body>
+</html>

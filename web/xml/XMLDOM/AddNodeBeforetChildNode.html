@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="loadxmldoc.js"> 
+</script>
+</head>
+<body>
+
+<script>
+xmlDoc=loadXMLDoc("books.xml");
+
+newNode=xmlDoc.createElement("book");
+
+x=xmlDoc.documentElement;
+y=xmlDoc.getElementsByTagName("book");
+
+document.write("Book elements before: " + y.length);
+document.write("<br>");
+x.insertBefore(newNode,y[3]);
+
+y=xmlDoc.getElementsByTagName("book");
+document.write("Book elements after: " + y.length);
+</script>
+</body>
+</html>

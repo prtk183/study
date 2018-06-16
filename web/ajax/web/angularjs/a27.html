@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="angular.min.js" ></script>
+<script src="angular-route.min.js" ></script>
+
+<script>
+	function fun($routeProvider){
+		$routeProvider.when("/",{template:'',controller:''}).when("/abc",{template:'<h1>hello world</h1>',controller:''}).when("/def",{template:'<h1>hello space</h1>',controller:''}).otherwise({template:'nothing',controller:''});
+	}
+	var a=angular.module("myapp",['ngRoute']);
+	a.config(fun);
+</script>
+</head>
+<body ng-app="myapp">
+adhasjkd
+<div ng-view>
+</div>
+dhsagjh
+
+
+</body>
+</html>

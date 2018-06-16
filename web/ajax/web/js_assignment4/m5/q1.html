@@ -1,0 +1,25 @@
+<html>
+<body>
+<script>
+function capt(a)
+{
+var b=/^[A-Z]+$/;
+if(b.test(a))
+{
+alert("valid");
+}
+else{
+
+alert("inavalid");
+}
+document.write(a);
+}
+
+</script>
+
+
+<input type="text" id="tt" />
+<input type="button" value="check" onclick="capt(tt.value)" />
+
+</body>
+</html>

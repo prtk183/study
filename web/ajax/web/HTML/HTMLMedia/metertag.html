@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> My course </title>
+		<link rel="stylesheet" href="mycss.css">
+		<style>
+		 
+		</style>
+		<script>
+		  function changeMeter(){
+		     var ival = document.getElementById("name").value.length;
+			 console.log("length :"+ival);
+			 document.getElementById("myMeter").value = ival*5;
+		  }
+		</script>
+	</head>
+	<body>
+	   <input type="text" id ="name" name="name" placeholder="Enter user" size ="10" onkeypress="changeMeter();">
+	   <meter id="myMeter" min="0" max="100" value="0"></meter></p> 
+	</body>
+</html>

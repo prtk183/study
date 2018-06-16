@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function butt()
+{
+$("p#pi").css("color", "red");
+}
+function dbtn()
+{
+$("p#p2").css("color","blue");
+}
+function chng()
+{
+$("p#p3").chang("ch","poi");
+}
+function on()
+{
+$(this).css("color","red");
+}
+function out()
+{
+$(this).css("color","yellow");
+}
+function hvr()
+{
+$("p#p5").hover(on,out);
+} 
+$(document).ready(hvr);
+$(document).ready(ma);
+function ma()
+{
+$("p#p2").bind("mouseenter",on);
+$("p#p2").bind("mouseleave",out);
+}
+
+$(document).focus(out);
+
+
+</script>
+<body>
+<p id="pi"> butttonc click into red</p>
+<input type="button" value="btn" onclick="butt()"/>
+<p id="p2"> doublickic </p>
+<input type="button" value="btn" ondblclick="dbtn()"/>
+<p id="p3"> chang</p>
+<input type="button" value="chng" onclick="chng()"/>
+<p id="p5">hover</p>
+<input id="p4" type="button" value="hvr" onclick="hvr()"/>
+</body>
+</html>

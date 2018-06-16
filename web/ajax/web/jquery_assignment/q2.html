@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc()
+{
+ $("#b1").click(f1=function(){
+ 
+ $("#p1").css("color","red")
+ });
+ $("#d1").hover(f2=function(){
+ 
+ $("#d1").css("backgroundColor","yellow")
+ });
+ 
+$("#p1").mouseenter(f3=function(){
+$("#d1").fadeOut(2000);
+});
+$("#p1").mouseleave(f4=function(){
+$("#d1").fadeIn(2000);
+});
+
+$("#b1").focus(f5=function(){
+$("#b1").css("color","red");
+});
+$("#b1").blur(f6=function(){
+$("#b1").css("color","yellow");
+});
+
+$("#i1").change(function(){
+$("#i1").fadeOut(2000);
+});
+
+}
+$(document).ready(abc);
+
+</script>
+</head>
+<body>
+
+<input type="button" id="b1" value="b1"/>
+<input type="button" id="b2" value="b2"/>
+<input type="button" id="b3" value="b3"/>
+<input type="button" id="b4" value="b4"/>
+<input type="button" id="b5" value="b5"/>
+<input type="button" id="b6" value="b6"/>
+<input type="button" id="b7" value="b7"/>
+<input type="button" id="b8" value="b8"/>
+<br>
+<br>
+<input id="i1" value="tarun"/>
+<p id="p1">para</p>
+<div id="d1" style="background-color:red;height:400px;width:400px;">
+</div>
+
+
+</body>
+</html>

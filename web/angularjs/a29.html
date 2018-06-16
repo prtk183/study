@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="angular.min.js" ></script>
+<script src="angular-route.min.js" ></script>
+
+<script>
+	function fun($routeProvider){
+		$routeProvider.when("/",{templateUrl:'one.html',controller:''});
+		$routeProvider.when("/:x",{templateUrl:'two.html',controller:'ctrl1'});
+		$routeProvider.when("/:x/:y",{template:'<h1> hello {{y1}}</h1>',controller:'ctrl1'});
+		
+		$routeProvider.otherwise({template:'nothing',controller:''});
+	}
+	function fun1($scope,$routeParams){
+		$scope.x1=$routeParams.x;
+		$scope.y1=$routeParams.y;
+	}
+	var a=angular.module("myapp",['ngRoute']);
+	a.controller("ctrl1",fun1);
+	a.config(fun);
+</script>
+</head>
+<body ng-app="myapp">
+adhasjkd
+<div ng-view>
+</div>
+dhsagjh
+
+
+</body>
+</html>

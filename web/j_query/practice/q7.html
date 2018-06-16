@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+.a1{
+	width:200px;
+	height:200px;
+	background-color:yellow;
+	position:absolute;
+}
+</style>
+<script>	
+	function abc(){
+		//$("div").animate({'left':'1000px'},5000);
+		$(this).animate({'left':'1000px','top':'200px';});
+	}
+	function f1()
+{	
+	$("p").each(function (i){
+	
+		abc();
+	});
+}
+	$(document).ready(f1);
+</script>
+</head>
+<body>
+<div class="a1">
+<img src="n.jpg" height="100" width="100">
+</div>
+<input type="button" onclick="$('div').stop()">
+<input type="button"  onclick="abc()" />
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

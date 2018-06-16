@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+ function hideit()
+{
+$("div#d1").hide(5000);
+}
+function showit()
+{
+
+$("div").show(3000);
+}
+function fadeit()
+{
+$("div#d2").fadeIn("slow");
+}
+function slideit()
+{
+$("div#d3").slideUp("slow");
+}
+</script>
+</head>
+<body>
+<p>yeah</p>
+<div id="d1">
+<p><h3> hide it</h3></p>
+</div>
+<div id="d2">
+<p>fade it</p>
+</div>
+<div id="d3">
+<p>slide it</p>
+</div>
+
+
+<input type="button" value="hide" onclick="hideit()" />
+<input type="button" value="show" onclick="showit()" />
+<input type="button" value="fade" onclick="fadeit()" />
+<input type="button" value="slide" onclick="slideit()" />
+<input type="button" value="show all" onclick="showit()" />
+</body>
+</html>

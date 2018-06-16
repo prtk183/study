@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+
+function abc(){
+
+$("[value='b1']").click(function(){
+
+$("[id='d1']").fadeOut(2000);
+});
+
+$("[id='d1']").hover(function(){
+
+$("[id='d1']").css("backgroundColor","yellow");
+
+});
+}
+$(document).ready(abc);
+</script>
+
+</head>
+<body>
+<input type="button" value="b1"/>
+<div style="background-color:red;width:250px;height:250px;" id="d1">
+</div>
+
+</body>
+</html>

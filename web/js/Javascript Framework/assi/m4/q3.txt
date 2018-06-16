@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var a=new Araay(1,5,3,4,3,1,2,1);
+doccument.write(a);
+</script>
+</body>
+</html>

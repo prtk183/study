@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function calvol()
+{
+  a=prompt("enter the radius");
+  b=parseInt(a);
+  vol=(4*3.14*b*b*b)/3;
+  document.getElementById("p1").innerText=vol;
+
+}
+</script>
+</head>
+<body>
+<p id="p1"></p>
+<input type="button" value="volume" onclick="calvol()"/>
+</body>
+</html>

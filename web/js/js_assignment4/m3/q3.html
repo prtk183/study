@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+  for(i=0;i<=15;i++)
+  {
+    if(i%2==0)
+	{
+       document.getElementById("w").innerHTML+="number is even "+i+"<br>";	
+	}
+  else{
+        document.getElementById("w").innerHTML+="number is odd "+i+"<br>";	  
+  
+     }
+  }
+
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="odd or even" onclick="f()"/>
+</body>
+</html>

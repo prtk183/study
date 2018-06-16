@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+	/*
+		DOM- Document Object Model
+		
+	*/
+	function add(e){
+		console.log(e);
+		if(e.target==b1){
+			console.log("Selected button 1");
+		}
+		else if(e.target==b2){
+			console.log("Selected button 2");
+		}
+	}
+
+</script>
+</head>
+<body>
+	<input type="button" id="b1" onclick="add(event)"/>
+	<input type="button" id="b2" onclick="add(event)"/>
+	<input type="button" id="b3" onclick="add(event)"/>
+	<input type="button" id="b4" onclick="add(event)"/>
+	<input type="button" id="b5" onclick="add(event)"/>
+
+
+</body>
+</html>

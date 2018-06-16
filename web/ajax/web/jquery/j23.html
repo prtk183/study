@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+.a1{
+	width:200px;
+	height:200px;
+	background-color:yellow;
+	position:absolute;
+}
+</style>
+<script>	
+	function abc(){
+		//$("div").animate({'left':'500px'},5000);
+		$("div").animate({'left':'500px','top':'200px','width':'50px'},5000);
+	}
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+<div class="a1"></div>
+<input type="button" onclick="$('div').stop()"/>
+</body>
+</html>

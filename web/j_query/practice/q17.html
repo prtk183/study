@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function fst()
+{
+$("p").first().css("background-color","yellow");
+}
+function lst()
+{
+$("p").last().css("background-color","yellow");
+$("p").eq(2).css("background-color", "yellow");
+}
+</script>
+</head>
+<body>
+<p>abc</p>
+<p>def</p>
+<p>ghi</p>
+<p>jkl</p>
+<p>mno</p>
+<input type="button" value="fst" onclick="fst()">
+<input type="button" value="lst" onclick="lst()">
+
+</body>
+</html>

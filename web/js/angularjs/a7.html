@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script>
+	function ctrl1($scope){
+		$scope.x1="a";
+		$scope.y="b";
+	}
+	function ctrl2($scope){
+		$scope.x1="aa";
+		$scope.y="bb";
+	}
+	var ang=angular.module("myApp",[]);
+	ang.controller("c1",ctrl1); //alias name,function name
+	ang.controller("c2",ctrl2);
+</script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="c1">
+	<input ng-model="x1" ng-hide="true" />
+	<span ng-bind="x1"/>
+	
+</div>
+
+<div ng-controller="c2">
+	<input ng-model="x1" />
+	<input ng-model="y" />
+	Hi <span>{{x1}} {{y}}</span>
+</div>
+
+</body>
+<html>

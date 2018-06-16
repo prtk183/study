@@ -1,0 +1,19 @@
+<?php
+$connection=mysqli_connect("localhost","dac22","actsdac1","dac22");
+$sql1="create table ourtable(name varchar(20));";
+mysqli_query($connection,$sql1);
+$sql1="insert into ourtable values('shwetank');";
+$sql2="insert into ourtable values('prateek');";
+$sql3="insert into ourtable values('shweta');";
+$sql4="insert into ourtable values('pariii');";
+mysqli_query($connection,$sql1);
+mysqli_query($connection,$sql2);
+mysqli_query($connection,$sql3);
+mysqli_query($connection,$sql4);
+
+$sqls="select * from ourtable;";
+$result=mysqli_query($connection,$sqls);
+while($row=mysquli_fetch_array($result))
+{
+  echo"$row[name]";
+}

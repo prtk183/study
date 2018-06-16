@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function revers()
+{
+var a=prompt("enter the number");
+var n=new Number(parseInt(a));
+var t=new Number(0);
+var r= new Number();
+while(n>0)
+{
+r=n%10;
+console.log(r);
+t=t*10+r;
+n=parseInt(n/10);
+if(n<0){
+break;
+}
+
+}
+document.getElementById("w").innerText=t;
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button"  value="rev"  onclick="revers()"/>
+</body>
+</html>

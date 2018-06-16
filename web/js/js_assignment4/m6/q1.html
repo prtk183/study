@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+obj={};
+function add()
+{
+var prop=document.getElementById("w").value;
+var val=document.getElementById("r").value;
+obj[prop]=val;
+ console.log(obj);
+}
+function dele()
+{
+ var prop=document.getElementById("t").value;
+ delete obj[prop];
+  console.log(obj);
+}
+
+function pri()
+{
+  console.log(obj);
+}
+</script>
+</head>
+<body>
+property:<input type="textbox" id="w"/>
+<br>
+value:<input type="textbox" id="r"/><br>
+<input type="button" value="add" onclick="add()"/><br>
+
+property:<input type="textbox" id="t"/><br>
+<input type="button" value="dele" onclick="dele()"/>
+<br>
+<input type="button" value="print" onclick="pri()"/>
+
+<body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function f()
+{
+mycolor=["red","green","white","black"];
+var a=;
+for(i=0;i<=3;i++)  
+{
+  
+a+=" "+mycolor[i];
+}
+document.getElementById("w").innerText=a;
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="merge" onclick="f()"/>
+
+</body>
+</html>

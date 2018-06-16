@@ -1,0 +1,21 @@
+{
+  "name": "dacdemo",
+  "version": "1.0.0",
+  "description": "demo in DAC class",
+  "main": "main.js",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "session",
+    "classes.",
+    "nodejs",
+    "demos"
+  ],
+  "author": "saritha",
+  "license": "ISC"
+}

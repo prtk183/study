@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+	/*
+		DOM- Document Object Model
+		
+	*/
+	funadd=function(){
+		a=document.getElementById("t1");
+		console.log(a);
+		b=document.getElementById("t2");
+		console.log(b);
+		console.log(parseInt(a.value)+parseInt(b.value));
+				
+	
+	}	
+	
+	
+
+</script>
+</head>
+<body>
+<input id="t1" value="0"/>
+<input id="t2" />
+<input type="button" id="b1" value="add" onclick="funadd()"/>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+com=function(a,b)
+{
+p=parseInt(a);
+q=parseInt(b);
+console.log(p);
+console.log(q);
+	if(a>b)
+	{
+		//prompt(a);
+		document.getElementById("c").innerText=a;
+	}
+	else
+	{
+		//prompt(b);
+		document.getElementById("c").innerText=b;
+	}
+}
+</script>
+</head>
+<body>
+<p id="c"> </p><p> is the larger number </p >
+<input id="a"/>
+<input id="b"/>
+
+<input type="button" value="comp" onclick="com(a.value,b.value)"/>
+
+
+<body>
+</html>

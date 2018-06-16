@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+	/*
+		DOM- Document Object Model
+		
+	*/
+	var s="Welcome DAC";
+	console.log("Length of the string is "+ s.length);
+	s1=s.toUpperCase();
+	console.log(s1);
+	s2=s.toLowerCase();
+	console.log(s2);
+	i=s.indexOf('e');
+	console.log(i);
+	x=s.lastIndexOf('e');
+	console.log(x);
+	str1=s.substring(2,4); //startIndex,endIndex
+	console.log("substring :"+str1);
+	str2=s.substr(2,4);
+	console.log("substr :"+str2); //startIndex,length
+	str3=s.slice(-6,-2); //startIndex,endIndex
+	console.log("slice :"+str3); 
+	str4=s.concat(" 2017");
+	//str4=s+ " 2017";
+	console.log(str4);
+	k=s.search("DAC");
+	console.log(k);
+	str5=s.replace("DAC","DSSD");
+	console.log(str5);
+</script>
+</head>
+<body>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function fun(){
+str=$("#fn").val()+ " " +$("#ln").val();
+	$("#p1").text(str);
+}
+</script>
+</head>
+<body>
+<input id="fn" onKeyUp="fun()" />
+<input id="ln" />
+Hello <span id="p1"></span>
+<input type="button" value="Click" onclick="fun()"/>
+</body>
+<html>

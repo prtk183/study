@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="jquery-3.2.1.js"></script>
+<script>
+
+function abc()
+{
+$("#b1").click(function(){
+
+$("#p1").attr("color","red")
+
+$("#d1").attr("width","100px");
+$("#t1").val("4");
+a=$("#t2").val();
+$("#p1").text(a);
+});
+}
+
+$(document).ready(abc);
+</script>
+<body>
+<input type="button" value="gs" id="b1"/>
+<input type="textbox" id="t1"/>
+<input type="textbox" id="t2"/>
+<div id="d1" style="background-color:red;width:250px;height:250px">
+<p id="p1"></p>
+</div>
+
+</body>
+</html>

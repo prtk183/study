@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> My course </title>
+		<link rel="stylesheet" href="mycss.css">
+		<style>
+		  header{
+				background-color:black;
+				color: white;
+				text-align : center;
+				padding : 20px;
+				font-size: 200%;
+		  }
+		  nav{
+				
+				background-color: #eeee00;
+				height :300px;
+				width :20%;
+				line-height: 40px;
+				float:left;
+		  
+					//display:inline;
+		
+		}
+		 div.section{
+		  		<iframe name=show>
+				</iframe>
+				background-color:red;
+				width:400;
+				 height:400;
+			
+		 }
+		 footer{
+		 		background-color:black;
+				color: white;
+				text-align : center;
+				padding-bottom : 20px;
+				font-size: 200%;
+				clear:both;
+		 }
+		
+		</style>
+	</head>
+	<body>
+	<header>
+	    CDAC courses
+	</header>
+	<nav>
+	    <ul>
+			<li><a href="p.html" target="show">Personal details </a></li>
+			<li><a href="ed.html" target="show">education details</a> </li>
+			
+			<li><a href="exp.html" target="show">experiance</a> </li>
+			
+			<li><a href="ex.html" target="show">extra </a></li>
+			
+			
+		</ul>
+	</nav>
+	<div class="section">
+						
+	</section>
+	<footer>
+		thank you
+	</footer>
+	
+		
+	</body>
+</html>

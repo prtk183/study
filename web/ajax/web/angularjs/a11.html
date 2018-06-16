@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script>
+	function ctrl1($scope){
+		$scope.x=["A","B","C"];
+	}
+	var ang=angular.module("myApp",[]);
+	ang.controller("c1",ctrl1); //alias name,function name
+	
+</script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="c1">
+	<ol>
+	<li ng-repeat="temp in x">{{$index}} {{temp}}</li>
+	</ol>
+	
+</div>
+</body>
+<html>

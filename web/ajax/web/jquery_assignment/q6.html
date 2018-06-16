@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+background-color:yellow;
+height:200px;
+width:200px;
+margin-bottom:10px;
+}
+</style>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc(){
+i=0;
+$("#b1").click(function(){
+
+$("div").each(function(index,value){
+clr=["","black","red","green","","","",""];
+
+$(this).css("backgroundColor",clr[i]);
+i=i+1;
+});
+
+
+});
+}
+$(document).ready(abc);
+
+
+</script>
+</head>
+<body>
+<div>
+</div>
+<div>
+</div>
+<div>
+</div>
+
+<input id="b1" type="button" value="iterate"/>
+
+</body>
+
+</html>

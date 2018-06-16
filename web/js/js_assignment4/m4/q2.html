@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="w"></p>
+<input type="button" value="sort" onclick="f()"/>
+<script>
+a=[];
+function f()
+{
+var p=prompt("enter the array size");
+n=parseInt(p);
+
+for(i=0;i<n;i++)
+{
+
+var p=prompt("eneter the number at index "+i);
+a[i]=p;
+
+}
+document.write("before ");
+document.write(a+ "<br>");
+var temp;
+for(i=0;i<n-1;i++)
+{
+  for(j=i+1;j<n;j++)
+  {
+  if(a[i]>a[j])
+  {  temp=a[i];
+     a[i]=a[j];
+     a[j]=temp;	 
+      
+  }
+  
+  }
+
+}
+for(i=0;i<n;i++)
+{
+ document.getElementById("w").innerHTML+=a[i]+"<br>";
+
+}
+}
+
+</script>
+
+
+</body>
+</html>
+

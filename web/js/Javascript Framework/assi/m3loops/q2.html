@@ -1,0 +1,32 @@
+ <html>
+ <head>
+ <script>
+ get=function(a,b,c)
+ {
+ p=parseInt(a);
+ q=parseInt(b);
+ r=parseInt(c);
+ 
+ if((p>q) && (p>r))
+ {
+ //alert(p);
+ alert(p);
+ }
+ else if((q>p)&&(q>r))
+ {
+ alert(q);
+ }
+ else
+ {
+ alert(r);
+ }
+ }
+ </script>
+ <head>
+ <body>
+ <input id="a"/>
+ <input id="b"/>
+ <input id="c"/>
+ <input type="button" value="great" onclick="get(a.value, b.value, c.value)"/>
+ </body>
+ </html>

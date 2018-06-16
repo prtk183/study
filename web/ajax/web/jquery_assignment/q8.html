@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc()
+{
+$("#r1").click(function(){
+
+$("#d1").css("backgroundColor","red");
+});
+$("#r2").click(function(){
+
+$("#d1").fadeOut();
+});
+$("#r3").click(function(){
+
+$("body").css("backgroundImage","url(koala.jpg)");
+});
+}
+$(document).ready(abc);
+</script>
+</head>
+<body>
+1<input id="r1" type="radio" /><br>
+2<input id="r2" type="radio" /><br>
+3<input id="r3" type="radio" /><br>
+<div id="d1" style="background-color:yellow;height:350px;width:350px;">
+</div>
+</body>
+</html>

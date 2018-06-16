@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title Today items
+	body
+		h1 #{mytitle}
+		p Add an item
+		form(action="http://localhost:5000/add",method="post")
+			input(type="text",name="myitem")
+			input(type="submit",value="add")
+		p List of items
+		ul
+		-for(var i = 0; i<myitems.length;i++){
+			li #{myitems[i].name}
+		-}

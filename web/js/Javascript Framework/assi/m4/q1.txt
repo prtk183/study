@@ -1,0 +1,12 @@
+<html>
+<head>
+<p>sort</p>
+</head>
+<body>
+<script>
+var a=new a("f","h","a","e","z");
+var b=a.sort();
+document.write("sorted: "+b);
+</script>
+</body>
+</html>

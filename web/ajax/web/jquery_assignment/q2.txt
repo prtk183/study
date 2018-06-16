@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+<input type="button" id="b1"/>
+<input type="button" id="b2"/>
+<input type="button" id="b3"/>
+<input type="button" id="b4"/>
+<input type="button" id="b5"/>
+<input type="button" id="b6"/>
+<input type="button" id="b7"/>
+<input type="button" id="b8"/>
+<br>
+<br>
+<di
+
+
+
+</body>

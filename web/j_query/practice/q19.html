@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<h1 text-align="center" color="blue">Frankly speaking with prtk<h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Frankly speaking with PRTK</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function ()
+{
+$("#accorian").accordion();
+});
+$(function(){$("#itis").datepicker();});
+$(function(){$("#dil").dialog();});
+$(function(){$("#men").menu();});
+$(function(){$("#tab").tabs({event:"mouseover"});});
+$(function(){$("#progress").progressbar({value:89});});
+
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  body{
+  background-color:gray;
+  
+  }
+  </style>
+<style>
+.ui-menu{ width: 150px;}
+</style>
+</head>
+<body>
+<p><label for="itis">Appointment on:</label> <input type="text" id="itis" title="just for management"></p>
+<br>
+<p>select location: 
+<select name="city">
+<option vaue="nagpur">nagpur</option>
+<option vaue="hyderabad">hyderabad</option>
+<option vaue="banglore">banglore</option>
+</select>
+</p>
+<div id="accorian">
+<h3>nagpur</h3>
+<div>
+<p>
+fdfDwwwwwwwwrr ssssssssssa ssssssss <br>llllllllllllllllllllllllllllllllllllll
+lllllllllllllllllllllllllllllllllllllllllllll<br>
+lllllllllllllllllllllll<br>lllllllllllllllllllllllllllllllll
+llllllllllllllllllllllllll<br>lllllllllllllllllllllllllllllll
+llllllllllllllllllllllllllllllllllllll
+</p>
+</div>
+<h3>hyderabad</h3>
+<div><p>hhhhhhhh  aaaaaaaaaaaa eeeeeeeee
+lllllllllllllllllllllll<br>llllllllllllllllllllllllllllllllllll
+lllllllllllllll<br>lllllllllllllllllllllll
+llllllllllllllllllllllllllllll<br>llllllll
+llllllllllllllllllllllllllllllllllllll</p></div>
+<h3>banglore</h3>
+<div><p>qqqqq aaaaaaaaa rrrrrrrttttt
+ppppppppppppppp
+<br>
+pppppppppppp<br>ppp
+ppppppppppppppp
+</p></div>
+</div>
+<br>
+<p>subject of discussion</p>
+<ul id="men">
+<li><div>Policics</div>
+<ul><li><div>national</div></li>
+	<li><div>international</div></li>
+</ul></li>
+<li><div>Music</div>
+<ul><li><div>indian</div></li>
+	<li><div>western</div></li>
+</ul></li>
+<li><div>formal</div></li>
+</ul>
+<br>
+<p>ratings:<div id="progress"></div></p>
+<br>
+<div id="dil" title="data">
+<p> booked</p>
+</div>
+<div id="tab">
+<p>contact details:</p>
+<ul>
+<li><a href="#t1">gmail_id</a></li>
+<li><a href="#t2">phone_no</a></li>
+<li><a href="#t3">Venue</a></li>
+</ul>
+<div id="t1">
+<p>gmail_id:pgawarle@gmail.com</p>
+</div>
+<div id="t2">
+<p>7517353169</p>
+</div>
+<div id="t3">
+<p>grand prateek hall,Delhi,5555555</p>
+</div>
+</div>
+</body>
+</html>

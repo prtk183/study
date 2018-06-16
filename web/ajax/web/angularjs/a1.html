@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+function fun(){
+str=document.getElementById("fn").value+" "+document.getElementById("ln").value;
+	document.getElementById("p1").innerText=str;
+}
+</script>
+</head>
+<body>
+<input id="fn" />
+<input id="ln" />
+Hello <span id="p1"></span>
+<input type="button" value="Click" onclick="fun()"/>
+</body>
+<html>

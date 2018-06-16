@@ -1,0 +1,56 @@
+<html>
+<head>
+<script>
+function slong(a)
+{
+var w=0,i,k=0;
+console.log(a);
+var n=a.length;
+console.log(n);
+if(n>0)
+{
+		for(i=0;i<=n;)
+			{
+				//console.log(i);
+				if(a[i]==" " || i==n)
+						{
+							w=w+1;
+							i++;
+
+						}
+				else
+						{
+							var l=0,j=0;
+						for(j=i;j>=0;j--)
+							{
+							l=l+1;
+							}
+							var len=[0];
+							while(k!=w+1)
+							{
+								k++;
+								len[k]=l;
+								
+							}
+							i++;
+						}
+			}
+console.log(w);
+for(l=1;l<=w;l++)
+{
+console.log(len[l]);
+}
+
+}
+else
+{
+console.log(w);
+}
+}
+</script>
+</head>
+<body>
+<input id="ip"/>
+<input type="button" value="word" onclick="slong(ip.value)" />
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+	/*
+		DOM- Document Object Model
+		
+	*/
+	funadd=function(a,b){
+	
+document.getElementById("p1").innerHTML+="<tr><td>"+a+"<td>"+b;
+	}	
+	
+
+</script>
+</head>
+<body>
+Firstname: <input id="t1" value="0"/>
+Lastname: <input id="t2" />
+<input type="button" id="b1" value="add" onclick="funadd(t1.value,t2.value)"/>
+<table id="p1">
+<tr><th> Firstname<th>lastname
+</table>
+
+</body>
+</html>

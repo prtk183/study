@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+var a=prompt("enter the string");
+console.log(a);
+a+=" ";
+console.log(a);
+n=a.length;
+
+var b=" ";
+for(i=0;i<n;)
+{
+  if(a.charAt(i)==" ")
+  {
+  b+=a.charAt(i);
+    i++;
+  }
+else
+{
+  b+=a.charAt(i).toUpperCase();
+    i=i+1;
+  while(a.charAt(i)!=" ")
+  {
+  b+=a.charAt(i);
+  i++;
+  }
+}
+}
+document.getElementById("w").innerText=b;
+}
+
+
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="click" onclick="f()"/>
+</body>
+</html>

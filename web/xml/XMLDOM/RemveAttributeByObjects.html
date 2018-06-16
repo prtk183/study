@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="loadxmldoc.js"> 
+</script>
+</head>
+<body>
+
+<script>
+xmlDoc=loadXMLDoc("books.xml");
+
+x=xmlDoc.getElementsByTagName('book');
+
+for (i=0;i<x.length;i++)
+{
+while (x[i].attributes.length>0)
+  {
+  attnode=x[i].attributes[0];
+  old_att=x[i].removeAttributeNode(attnode);
+
+  document.write("Removed: " + old_att.nodeName)
+  document.write(": " + old_att.nodeValue)
+  document.write("<br>")
+  }
+}
+</script>
+</body>
+</html>

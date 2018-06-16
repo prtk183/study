@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="jquery-3.2.1.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+function abc()
+{
+$("#bd1").accordion({collapsible:true});
+$("#t1").datepicker();
+$("#d1").dialog();
+$("#menu").menu();
+$("#d2").progressbar({value:30});
+$("#d3").tabs();
+$("#p").tooltip();
+$("#q").tooltip();
+}
+
+$(document).ready(abc);
+</script>
+</head>
+<body>
+<div id="menu_id" style=" width:300px;float:right;">
+<ul id="menu">
+    <li><div>cars</div></li>
+	<li><div>bikes</div></li>
+	<li><div>boats</div></li>
+	<li><div>planes</div>
+		<ul>
+			<li><div>Fighter planes</div></li>
+			<li><div>Commercial planes</div></li>
+			<li><div>Cargo planes</div>
+				<ul>
+					<li><div>heavy cargo planes</div></li>
+					<li><div>Light cargo planes</div></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<div id="d3">
+<ul>
+<li><a href="#x">heya</a></li>
+<li><a href="#y">haala</a></li>
+</ul>
+<div id="x">
+
+<p>its very windy out here</p>
+</div>
+<div id="y">
+
+<p>plzzz someone gift me jacket</p>
+</div>
+</div>
+</div>
+
+<div id="d1">
+hello how r u
+</div>
+
+ <div id="bd1" style="width:400px;">
+ <h2>intro</h2>
+    <div>
+    <p>hi my name is shwetank</p>
+    </div>
+ <h2 style="margin-bottom:20px;">occupation</h2>
+    <div style="margin-bottom:20px;">
+    <p>i am student persuing my course in CDAC kp</p>
+    </div>
+</div>
+
+<input type="textbox" id="t1"/>
+<div id="d2" style="margin-top:20px;width:400px;">
+</div>
+
+<input type="textbox" id="p" title="enter text"/>
+<p id="q" style="background-color:red;width:400px" title="haaaaalaa">plzzzzzzzzzzzzzzzzzzzzzzzz help others</p>
+
+</body>
+</html>

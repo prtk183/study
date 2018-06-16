@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function cln()
+{
+z("p").text("yo");
+}
+</script>
+<script>
+var z=$.noConflict();
+function cn()
+{
+z("p").text("yeah");
+
+}
+</script>
+</head>
+<body>
+<p>hi</p>
+<input type="button" value="k" onclick="cln()">
+<input type="button" value="l" onclick="cn()">
+</body>
+</html>

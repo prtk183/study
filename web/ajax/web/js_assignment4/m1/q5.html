@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+arr1=[];
+arr2=[];
+rer=[];
+function f()
+{
+var a=prompt("enter the size of array one");
+n1=parseInt(a);
+for(i=0;i<n1;i++)
+{
+
+var p=prompt("eneter the number at index "+i);
+arr1[i]=parseInt(p);
+
+}
+
+var b=prompt("enter the size of array two");
+n2=parseInt(b);
+
+for(j=0;j<n2;j++)
+{
+
+var p=prompt("eneter the number at index "+j);
+arr2[j]=parseInt(p);
+
+}
+
+i=0;
+j=0;
+k=0;
+
+while((i<n1)&&(j<n2))
+{
+rer[k++]=arr1[i]+arr2[j];
+i++;
+j++;
+
+}
+while(i<n1)
+{
+rer[k++]=arr1[i++];
+}
+
+while(j<n2)
+{
+rer[k++]=arr2[j++];
+}
+for(i=0;i<k;i++)
+{
+document.getElementById("w").innerHTML+=rer[i]+"<br>";
+}
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="abc" onclick="f()"/>
+</body>
+</html>

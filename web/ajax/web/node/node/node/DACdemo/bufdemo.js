@@ -1,0 +1,12 @@
+var buf = new Buffer(256);
+var len = buf.write("Simply Learning");
+var bf = buf.toString(`utf-8`,0,len);
+console.log("Octets written : "+  len);
+console.log("reading buf : "+  bf);
+var bufjson = buf.toJSON();
+console.log("covert to json : "+ bufjson);
+console.log(`process id:${process.pid}`);
+console.log(`process arch:${process.arch}`);
+console.log(`process cwd:${process.cwd()}`);
+console.log(`process platform:${process.platform}`);
+console.log(`process version:${process.version}`);

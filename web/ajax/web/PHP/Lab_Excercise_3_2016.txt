@@ -1,0 +1,23 @@
+1. Write a PHP program to accept data like Username, Gender, DOB and store it in a Database(MySQL). Further display all the data from the database.
+
+2. Write a PHP program to parse the below XML and print each book details in a table format.
+
+<?xml version=“1.0“ encoding=“iso-8859-1“?>
+<!DOCTYPE book SYSTEM “book.dtd“>
+<books>
+	<book>
+		<title>An XML Book</title>
+		<author>M. Mayer</author>
+		<year>2005</year>
+	</book>
+	<book>
+		<title>PHP CookBook</title>
+		<author>David Gerald</author>
+		<year>2006</year>
+	</book>
+	<book>
+		<title>An XML Book</title>
+		<author>M. Mayer</author>
+		<year>2005</year>
+	</book>
+</books>

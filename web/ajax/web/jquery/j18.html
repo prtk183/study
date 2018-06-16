@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+	function btn1(){
+			$(this).css("color","red");
+	}
+	function btn2(){
+		$(this).css("color","black");
+	}
+	
+	function abc(){
+		$("input[type='button']").hover(btn1,btn2);
+
+	}
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+<input type="button" value="b1"/>
+<input type="button" value="b2"/>
+<input type="button" value="b1"/>
+<input type="button" value="b2"/><input type="button" value="b1"/>
+<input type="button" value="b2"/><input type="button" value="b1"/>
+<input type="button" value="b2"/><input type="button" value="b1"/>
+<input type="button" value="b2"/>
+</body>
+</html>

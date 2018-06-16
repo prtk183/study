@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+ var a=prompt("enter the string");
+  a+=" ";
+  n=a.length;
+  max=0;
+  count=0;
+  var b=" ";
+  var temp;
+  for(i=0;i<n;)
+  {
+     if(a.charAt(i)==" ")
+	 {
+	    i++;
+	 }
+	 else{
+			while(a.charAt(i)!=" ")
+			{ 
+			   count=count+1;
+			   i++;
+		         	
+			}
+			if(max<count)
+			{
+				temp=i-1;	
+			    max=count;
+			
+			}
+		}
+		count=0;
+ }
+ 
+ for(i=(temp-max+1);i<=temp;i++)
+ {
+ b+=a.charAt(i);
+ }
+ document.getElementById("w").innerText=b;
+  }
+ </script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="longest" onclick="f()"/>
+</body>
+</html>

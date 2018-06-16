@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.coloring{
+
+background-color:yellow;
+color:red;
+
+}
+
+</style>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc(){
+$("#b1").click(function abc(){
+
+$("[class='coloring']").css("color","yellow");
+$("[class='coloring']").css("backgroundColor","red");
+});
+}
+$(document).ready(abc);
+
+</script>
+</head>
+<body>
+<input type="button" value="change" id="b1"/>
+<p class="coloring">hello</p>
+<br>
+<p class="coloring">hiiiii</p>
+<br>
+<p>haaala madrid</p>
+</body>
+</html>

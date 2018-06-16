@@ -1,0 +1,18 @@
+1. Write a program to print PHP's configurations?
+2. Write a program to generate random number between 100 and 1000 and check the number is even or odd.
+3. Write a PHP program to display today's date and current time using date function.
+4. Write a program to print the below PHP information:
+	a. Web Server version
+	b. Currently executing filename
+	c. The browser info
+	d. IP Address of the Server
+	e. IP Address of the Client
+5. Write a PHP program to add two numbers and print the sum.
+6. Write a PHP Program to find out the area of a rectangle given length=10cm and breadth=20cm using a function.
+7. Write a program to declare variables such as string, int and boolean and use php pretty prints to display the variable type and value.
+8. Write a PHP code to print following statement using different print methods and also using pretty prints: 
+
+	"Advanced Computing Training School (ACTS)"
+
+9. Write a PHP code to check the given number/string is Palindrome.
+10. Write a PHP program to explain string interpolation?

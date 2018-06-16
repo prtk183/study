@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+  color=["blue","green","red","orange","violet","indigo","yellow"];
+  o=["th","st","nd","rd"];
+  for(i=0;i<3;i++)
+  {
+  j=i+1;
+  document.getElementById("w").innerHTML+=j+o[j]+" choice is "+color[i]+"<br>";
+  
+  }
+ for(i=3;i<7;i++)
+ {
+   j=i+1;
+  document.getElementById("w").innerHTML+=j+o[0]+" choice is "+color[i]+"<br>";
+ }
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="abc" onclick="f()"/>
+</body>
+</html>

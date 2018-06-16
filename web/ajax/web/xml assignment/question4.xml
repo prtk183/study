@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<?xml-stylesheet type="text/xsl" href="a.xsl"?>
+<departmental>
+<customer-name>shwetank</customer-name>
+<dat>20-11-95</dat>
+<billno>1234</billno>
+<billdetails> 
+<product>
+<product_name>apple</product_name>
+<qty>1</qty>
+<rate>24</rate>
+</product>
+
+<product>
+<product_name>lux soap</product_name>
+<qty>4</qty>
+<rate>15</rate>
+</product>
+
+<product>
+<product_name>room freshner</product_name>
+<qty>1</qty>
+<rate>200</rate>
+</product>
+</billdetails>
+</departmental>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> My course </title>
+		<link rel="stylesheet" href="mycss.css">
+		<style>
+		
+		</style>
+		<script>
+		function playvideo(){
+		  var v = document.getElementById("myvideo");
+		  v.play();
+		  }
+		function pausevideo(){
+		  var v = document.getElementById("myvideo");
+		  v.pause();
+		  }
+		function function1oad(){
+			//alert("Webpage is loaded");
+		}			
+		</script>
+	</head>
+	<body onload="function1oad()">
+		<video id ="myvideo" height="200" width="200" controls autoplay loop>
+		  <source src="cats.mp4" type="video/mp4">
+		  <track >
+		</video>
+		<button type ="button" onclick ="playvideo()" value="play">play</button>
+		<button type ="button" onclick ="pausevideo()" value="pause">pause</button>
+    </body>
+</html>

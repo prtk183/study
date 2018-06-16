@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="w"></p>
+<input type="button" value="sort" onclick="f()"/>
+<script>
+a=[];
+function f()
+{
+var p=prompt("enter the array size");
+n=parseInt(p);
+
+for(i=0;i<n;i++)
+{
+
+var p=prompt("eneter the number at index "+i);
+a[i]=p;
+
+}
+document.write("before ");
+document.write(a+ "<br>");
+var c=a.sort(a,f=function(a,b) {return (a-b);});
+document.write("<br>")
+document.write(c);
+
+}
+
+</script>
+
+
+</body>
+</html>
+

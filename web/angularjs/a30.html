@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="angular.min.js" ></script>
+<script src="angular-route.min.js" ></script>
+
+<script>
+	function fun1($scope){
+		$scope.x="HELLO";
+		$scope.y="false";
+		$scope.f=function(){console.log($scope.x)};
+		$scope.f1=function(){document.getElementById("s1").innerText="hi";};
+	}
+	var a=angular.module("myapp",['ngRoute']);
+	a.controller("ctrl1",fun1);
+
+</script>
+</head>
+<body ng-app="myapp" ng-controller="ctrl1">
+<INPUT ng-model="x" ng-hide="y"/>
+<INPUT ng-model="x"/>
+<INPUT ng-model="x"/>
+<span ng-bind="x" id="s1"></span>
+<input type="button" value="click" ng-click="f()">
+<input type="button" value="change" ng-click="f1()">
+
+
+</body>
+</html>

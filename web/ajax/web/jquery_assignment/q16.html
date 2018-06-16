@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+var x=$.noConflict();
+function abc(){
+x("#b1").click(function(a,b){
+x("#b1").css("color","red");
+
+});
+
+}
+x(document).ready(abc);
+
+</script>
+</head>
+<body>
+<input type="button" value="chng" id="b1"/>
+</body>
+</html>

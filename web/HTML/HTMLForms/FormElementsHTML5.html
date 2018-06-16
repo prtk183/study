@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Form Element: Data List</h2>
+<form action="action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+<hr>
+<h2>Form Element: Keygen</h2>
+<form action="action_page.php">
+  Username: <input type="text" name="user">
+  <br><br>
+  Encryption: <keygen name="security">
+  <br><br>
+  <input type="submit">
+
+<hr>
+<h2>Form Element: Output</h2>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"/>
+</script>
+<script>
+function art()
+{
+var i;
+var x=[];
+
+$("li").each(function(){x.push($(this).text())});
+console.log(x);
+for(i=0;i<x.lenght;i++)
+{
+a=x.pop();
+console.log(a);
+$("po").text(a);
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="ll" onclick="art()"/>
+<ul>
+<li>prtk</li>
+<li>p</li>
+<li>q</li>
+<li>r</li>
+</ul>
+<p id="po"> </p>
+</body>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+.a1{
+	width:200px;
+	height:200px;
+	background-color:yellow;
+
+}
+.a2{
+	font-size:25px;
+}
+</style>
+<script>	
+	function f1(){
+		$("div").remove(".a2");
+		
+	}
+	
+</script>
+</head>
+<body>
+<div class="a1 a2">div1</div>
+<div class="a1">div2</div>
+<div class="a1 a2">div3</div>
+
+<input type="button" value="b1" onclick="f1()"/>
+
+</body>
+</html>

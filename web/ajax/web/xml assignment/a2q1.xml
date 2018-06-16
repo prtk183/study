@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE lora [
+  <!ELEMENT lora    (to,from,body)>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+]>
+
+<lora>
+<to>ram</to>
+<from>rahim</from>
+<body> ram rahim insan is in jail now!! ram rahim is the name of single person</body>
+</lora>

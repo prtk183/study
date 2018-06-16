@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function artri()
+{
+a=prompt("enter length of side 1");
+b=prompt("enter the length of side 2");
+c=prompt("enter the length of side 3");
+
+p=parseInt(a);
+q=parseInt(b);
+r=parseInt(c);
+s=(p+q+r)/2;
+ar=s*(s-p)*(s-q)*(s-r);
+ar=Math.sqrt(ar);
+document.getElementById("i").innerText=ar;
+}
+</script>
+</head>
+<body>
+<p>area of triangle</p>
+<p id="i"> </p>
+<input type="button" value="area" onclick="artri()"/>
+</body>
+</html>

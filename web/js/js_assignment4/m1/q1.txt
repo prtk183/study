@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function chcolor()
+{
+a.style.background("red");
+
+}
+
+</script>
+
+</head>
+<body>
+<p>heloo</p>
+<input type="button" value="click" onclick="chcolor(this)"/>
+
+</body>
+</html>

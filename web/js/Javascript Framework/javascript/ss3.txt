@@ -1,0 +1,14 @@
+<html>
+<head>
+<script>
+var a;
+b=3;
+c=true;
+d="parteek"
+e=typeof(c)
+conslo.log(e);
+</script>
+</head>
+<body>
+</body>
+</html>

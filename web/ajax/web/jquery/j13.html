@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+	function fun(){
+		
+		console.log(a);
+	}
+	function abc(){
+		$("[href]").css("color","red");	
+		//$("[href='www.google.co.in']").hide(2000);
+		//$("[href^='www']").hide(2000);
+		//$("[href$='com']").hide(2000);
+		//$("[href*='oo']").css("backgroundColor","yellow");
+		$("a[href!='www.google.co.in']").hide(2000);
+
+	}
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+	<a href="www.google.co.in">ggle</a>
+	<a href="www.yahoo.com">yah</a>
+	<a href="www.gmail.com">gmail</a>
+
+</body>
+</html>

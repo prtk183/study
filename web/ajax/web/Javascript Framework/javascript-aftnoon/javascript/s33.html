@@ -1,0 +1,22 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+	<p id="p1">dfgdfgfdg</p>
+<script>
+	//timers
+	i=0;
+	function fun1(){
+		document.getElementById("p1").innerText=new Date();
+		setTimeout(fun2,5000);
+	}
+	function fun2(){
+		document.getElementById("p1").style.color="red";
+	}
+	fun1();	
+	</script>
+</body>
+</html>

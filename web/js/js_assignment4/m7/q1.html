@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f1()
+{
+a=prompt("enter the name");
+document.getElementById("w").style.backgroundColor="green";
+document.getElementById("w").innerText=a;
+setTimeout(f2,5000);
+}
+f2=function()
+{
+document.getElementById("w").style.backgroundColor="red";
+
+document.getElementById("w").innerText=new Date();
+setTimeout(f2,1000);
+}
+function f3()
+{
+
+clearTimeout(f2);
+}
+</script>
+</head>
+<body onload="f1()">
+<p id="w"></p>
+
+<input type="number" id="t1" />
+<input type="button" value="stop timer" onclick="f3()"/>
+</body>
+</html>

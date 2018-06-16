@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+a=[];
+function f()
+{
+  
+var p=prompt("enter the array size");
+n=parseInt(p);
+
+for(i=0;i<n;i++)
+{
+
+var p=prompt("eneter the number at index "+i);
+a[i]=p;
+
+}
+
+for(i=0;i<n;i++)
+{
+  for(r=i+1;r<n;r++)
+  {
+    if(a[i]==a[r])
+	{
+	  j=r;
+	  r=r-1;
+      while(j<n)
+	 {
+	   a[j]=a[j+1];
+	   j++;
+	 
+	 } 
+	
+	
+	 n=n-1;
+	}
+  
+  }
+
+}
+for(i=0;i<n;i++)
+{
+document.getElementById("w").innerHTML+=a[i]+"<br>"  
+ } 
+  
+  
+  
+}
+</script>
+</head>
+<body>
+
+<p id="w"></p>
+<input type="button" value="redup" onclick="f()"/>
+</body>
+</html>

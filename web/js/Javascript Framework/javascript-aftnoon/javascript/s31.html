@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+	//timers
+	i=0;
+	function fun1(){
+		setInterval(fun2,1000);
+	}
+	function fun2(){
+		document.getElementById("p1").innerText=new Date();
+	}
+	fun1();
+</script>
+</head>
+<body>
+	<p id="p1"></p>
+</body>
+</html>

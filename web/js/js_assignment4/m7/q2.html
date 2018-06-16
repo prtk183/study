@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+td,th{
+text-align=-webkit-auto;
+}
+</style>
+<script>
+obj={};
+arr=[];
+function f(a,b,c)
+{
+obj.name=a;
+obj.roll_no=b;
+obj.mark=c;
+arr[arr.length]=obj;
+document.getElementById("w").innerHTML+="<tr><td>"+a+"</td>"+"<td>"+b+"</td>"+"<td>"+c+"</td></tr>";
+console.log(arr);
+}
+</script>
+</head>
+<body>
+
+name:<input type="textbox" id="t1" />
+<br>
+<br>
+rollno:<input type="tesxtbox" id="t2"/>
+<br>
+<br>
+mark:<input type="number" id="t3"/>
+<br>
+<br>
+<input type="button" value="add" onclick="f(t1.value,t2.value,t3.value)"/>
+<br>
+<br>
+<table id="w" style="margin-left: 432px;">
+<tr>
+<th style="padding-right:31px;">name</th>
+<th style="padding-right:31px;">roll_no</th>
+<th style="padding-right:31px;">mark</th>
+</tr>
+</table>
+</body>
+</html>

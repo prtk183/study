@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="angular.min.js" ></script>
+<script>
+	function fun1($scope){
+		$scope.fun=function(){
+			$scope.x.push($scope.temp);
+		};
+	}
+	
+
+	var a=angular.module("myapp",[]);
+	a.controller("ctrl1",fun1);
+	
+</script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="ctrl1" ng-init="x=[1,2,3]">
+<input ng-model="temp"/>
+<input type="button" ng-click="fun()"/>
+  <ul>
+	<li ng-repeat="o in x">{{o}}</li>
+  </ul>
+</div>
+
+
+
+</body>
+</html>

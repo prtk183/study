@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function rem()
+{
+a=document.getElementById("#i").selectedIndex;
+document.getElementById("#i").remove(a);
+}
+</script>
+</head>
+<body>
+<select id="#i" name="course">
+<option value="dac">dac</option>
+<option  value="dmc">dmc</option>
+<option  value="desd">desd</option>
+</select> 
+
+<input type="button" value="remove" onclick="rem()"/>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+		function fun1(e){
+			console.log(e.key);
+		}
+		function fun2(e){
+			console.log("from function2");
+		}
+		function fun3(e){
+			console.log("from function3");
+		}
+		
+</script>
+</head>
+<body>
+<input type="text" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+</body>
+</html>

@@ -1,0 +1,29 @@
+1. Write a PHP script which display all the numbers comma seperated between 200 and 250 that are divisible by 4.
+Note : Do not use any PHP control statement. Use Implode function.
+
+2. Write a PHP program to setup an array and print out the values iterating each as well as dump at once
+
+Array Values: 78, 60, 62, 68, 71, 68, 73, 85, 66
+
+3. Write a program to sort the following associative array : 
+array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40") in 
+a) ascending order sort by value
+b) ascending order sort by Key
+c) descending order sorting by Value
+d) descending order sorting by Key
+
+4. Write a program to perform the below operations on the given string: "Armageddon" using in-built PHP functions.
+
+a. Find Length of the string
+b. Make all the characters of the string UPPERCASE
+c. Make all the Characters of the string lowercase
+d. Reverse the string
+
+5. Write a PHP program that will use form to accept name and contact number from the user, validate using PHP and display it.
+
+6. Write a PHP program to start a session, store your favourite color.
+ Display the session variables in an another page and finally remove all the session variables and destroy the session.
+
+7. Write a program to set a cookie and delete a cookie?
+
+8. Write a PHP code for sum of two numbers which are entered by the users.

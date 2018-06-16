@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"/></script>
+<script>
+function app()
+{
+$("ol").append("<li>d</li>");
+}
+function prep()
+{
+$("ol").prepend("<li>d</li>");
+}
+function bef()
+{
+$("ol").before("<li>s</li>");
+}
+function aft()
+{
+$("ol").after("<li>s</li>");
+}
+function emp()
+{
+$("li").empty();
+}
+function rem()
+{
+$("li").remove();
+}
+</script>
+</head>
+<body>
+<ol>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ol>
+<input type="button" value="append" onclick="app()"/>
+<input type="button" value="prepend" onclick="prep()"/>
+<input type="button" value="before" onclick="bef()"/>
+<input type="button" value="after" onclick="aft()"/>
+<br>
+<input type="button" value="after" onclick="emp()"/>
+<input type="button" value="after" onclick="rem()"/>
+</body>
+</html>

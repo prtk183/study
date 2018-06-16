@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+  var a=prompt("enter the string");
+  n=a.length;
+  var count=0
+  for(i=0;i<n;i++)
+  {
+    if(a.charAt(i)=="a"||a.charAt(i)=="e"||a.charAt(i)=="i"||a.charAt(i)=="o"||a.charAt(i)=="u")
+    count=count+1 
+  }
+document.getElementById("w").innerText=count;
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="count" onclick="f()"/>
+</body>
+</html>

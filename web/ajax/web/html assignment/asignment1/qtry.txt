@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Drinks </title>
+<meta name="Beverages" content="Tea,Coffe,Shakes,smmothie">
+</head>
+<body>
+<h1> Bevarges </h1>
+<p> Avalilable bevarages Are....</p>
+<ul>
+<li> Coffee 
+<ol>
+<li> black Coffee </li>
+<li> hazlenut Coffee </li>
+<li> latte Coffee </li>
+</ol>
+</li>
+<li> Tea
+<ol>
+<li> indian Chai </li>
+<li> green tea </li>
+<li> Irfani tea </li>
+</ol>
+</li>
+
+
+
+
+</body>
+</html>

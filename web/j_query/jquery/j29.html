@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>	
+	function f1(){
+		
+		$(this).css("color","red");
+	}
+	function f2(){
+		
+	}
+	function abc(){
+		//$("input[type='button']").click(f1);
+		$("input[type='button']").bind("click mouseenter mouseleave",f1);
+	}
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+<div id="d1">
+<p>Para1</p>
+<p>Para1</p>
+<p>Para1 </p>
+<div>
+<p>sadjash</p>
+</div>
+<p>Para1</p>
+<p>Para1</p>
+<p>Para1</p>
+</div>
+<input type="button" value="b1" onclick="f1()"/>
+<input type="button" value="b2" onclick="f2()"/>
+
+</body>
+</html>

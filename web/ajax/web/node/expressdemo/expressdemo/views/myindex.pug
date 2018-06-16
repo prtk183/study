@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title My client pug  file
+	body
+		- var x= 3;
+		- for(i=0; i<x;i++){
+			h1 this is my header
+		- }
+		p explain about this page
+		form(action="/book",method="get")
+			input(type="text",name="bookname")
+			input(type="submit")

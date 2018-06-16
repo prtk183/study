@@ -1,0 +1,13 @@
+html
+	body
+		form(action="http://localhost:5000/home" method="get")
+			input(type="text" name="items")
+			input(type="submit" value="submit")
+		form(action="http://localhost:5000/d" method="get")
+			input(type="text" name="val")
+			input(type="submit" value="delete")
+		ol
+		-for(var i=0;i<m.length;i++){
+			li #{m[i].name}
+		-}
+	

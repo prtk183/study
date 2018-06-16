@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span{
+background-color:aqua;
+width:100px;
+}
+p{
+background-color:yellow;
+}
+
+</style>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function f()
+{
+$("#p1").mouseover(function f1(){
+
+$("#t1").fadeIn("slow");
+
+});
+
+
+$("#d1").mouseout(function f2(){
+
+$("#t1").fadeOut("fast");
+
+});
+
+$("#p2").mouseover(function f3(){
+
+$("#t2").fadeIn("slow");
+
+});
+$("#p2").mouseout(function f4(){
+
+$("#t2").fadeOut("fast");
+
+});
+$("#p3").mouseover(function f5(){
+
+$("#t3").fadeIn("slow");
+
+});
+$("#p3").mouseout(function f6(){
+
+$("#t3").fadeOut("fast");
+
+});
+
+}
+function f7()
+{
+$("#p4").mouseover(function f1(){
+
+$("#t4").slideDown("slow");
+
+});
+$("#p4").mouseout(function f2(){
+
+$("#t4").slideUp("fast");
+
+});
+
+$("#p5").mouseover(function f3(){
+
+$("#t5").slideDown("slow");
+
+});
+$("#p5").mouseout(function f4(){
+
+$("#t5").slideUp("fast");
+
+});
+$("#p6").mouseover(function f5(){
+
+$("#t6").show("slow");
+
+});
+$("#p6").mouseout(function f6(){
+
+$("#t6").hide("fast");
+
+});
+
+}
+$(document).ready(f);
+$(document).ready(f7);
+</script>
+
+</head>
+<body>
+<div style="width:250px;">
+
+
+
+
+<div id="d1">
+<span id="t1" style="float:right;display:none;margin-right:77px;">hello lucky</span>
+<p id="p1" style="width:100px;">abc</p>
+</div>
+<div id="t2" style="float:right;display:none;margin-right:77px;">
+<span id="s2">hello edwin</span>
+</div>
+<p id="p2" style="width:100px;">xyz</p>
+<div id="t3" style="float:right;display:none;margin-right:77px;">
+<span id="s3">hello upendra</span>
+</div>
+<p id="p3" style="width:100px;">tuv</p>
+
+</div>
+<div style="width:250px;">
+
+
+
+
+<div id="t4" style="float:right;display:none;margin-right:77px;">
+<span id="s4">hello lucky</span>
+</div>
+<p id="p4" style="width:100px;">abc</p>
+<div id="t5" style="float:right;display:none;margin-right:77px;">
+<span id="s5">hello edwin</span>
+</div>
+<p id="p5" style="width:100px;">xyz</p>
+<div id="t6" style="float:right;display:none;margin-right:77px;">
+<span id="s6">hello upendra</span>
+</div>
+<p id="p6" style="width:100px;">tuv</p>
+
+</div>
+</body>
+</html>

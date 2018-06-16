@@ -1,0 +1,29 @@
+
+
+<? xml version="1.0" encoding="UTF-8" ?>
+<! DOCTYPE bookstore
+[
+<! ELEMENT bookstore(book1,name,author,price,book2)>
+<! ELEMENT book1(name,author,price)>
+<! ELEMENT name(#PCDATA)>
+<! ATTLIST name pages #PCDATA "700">
+<! ELEMENT author(#PCDATA)>
+<! ELEMENT price(#PCDATA)>
+<! ELEMENT book2(name,author,price)>
+]>
+
+
+
+
+<bookstore>
+<book1>
+<name pages="700">harry potter</name>
+<author>jk rowling</author>
+<price>1000</price>
+</book1>
+<book2>
+<name pages="800">shiva triology</name>
+<author>Amish Tripathi</author>
+<price>1006</price>
+</book2>
+</bookstore>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+	arr=[];
+	function fun(a,b){
+		var o=new Object();
+		o.firstname=a;
+		o.lastname=b;
+		arr[arr.length]=o;
+		document.getElementById("tab1").innerHTML+="<tr><td>"+a+"<td>"+b;
+		console.log(arr);
+	}
+	
+</script>
+</head>
+<body>
+
+	First name:<input id="t1"/><br/>
+	Last name:<input id="t2"/>
+	<input type="button" onclick="fun(t1.value,t2.value)" value="add"/>
+	<table id="tab1">
+	<tr><th>First name<th>Lastname
+	</table>
+
+
+</body>
+</html>

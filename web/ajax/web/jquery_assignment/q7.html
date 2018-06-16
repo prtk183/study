@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc(){
+for(i=0;i<5;)
+{
+$("img").animate({'margin-right':'500px'},20000);
+$("img").animate({'margin-left':'500px'},20000);
+console.log(i);
+i++;
+}
+};
+
+function d(){
+
+$("img").stop();
+
+};
+
+$(document).ready(abc);
+
+
+</script>
+</head>
+<body>
+<img src="koala.jpg" height="250px" width="250px">
+<br>
+<input type="button" value="stop" onclick="d()" id="b1"/>
+</body>
+</html>

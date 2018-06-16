@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+   var a=prompt("enetr the numeber 1");
+   p=parseInt(a);
+   var b=prompt("enter the number 2");
+   q=parseInt(b);
+   var c=prompt("enter the number 3");
+   r=parseInt(c);
+   var d=prompt("enter the number 2");
+   s=parseInt(d);
+   var e=prompt("enter the number 2");
+   t=parseInt(e);
+   
+   var largest;
+   if(p>q)
+   largest=p;
+   else
+   largest=q;
+   if(r>largest)
+   largest=r;
+   largest=largest;
+   if(s>largest)
+   largest=s;
+   else
+   largest=largest;
+   if(t>largest)
+   largest=t;
+   else
+     largest=largest;
+
+	 document.getElementById("w").innerText=largest;
+}
+
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="largest" onclick="f()"/>
+</body>
+</body>
+</html>

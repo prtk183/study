@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+function abc()
+{
+$("#b1").click(function(){
+
+
+$("#p1").append("hello");
+$("#p1").prepend("hello");
+$("p").append("<hr>");
+$("p").prepend("<hr>");
+});
+
+$("#b2").click(function(){
+
+$("p").remove();
+});
+$("#b3").click(function(){
+
+$("#p1").empty();
+});
+
+
+}
+$(document).ready(abc);
+
+</script>
+</head>
+<body>
+<div>
+<p id="p1"><br>hello<br></p>
+<p>para1</p>
+<p>para2</p>
+<p>para3</p>
+<p>para4</p>
+<p>para5</p>
+<p>para6</p>
+<p>para7</p>
+</div>
+<input id="b1" type="button" value="append"/>
+<input type="button" value="remove" id="b2"/>
+<input type="button" value="empty" id="b3"/> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<script>
+function abc(){
+
+$("#b1").click(function(){
+
+$("#t1").clone().appendTo("#d2");
+$("#d2").append("<br>");
+});
+
+$("#b2").click(function(){
+
+$("#t1").attr("border","0px");
+
+});
+}
+$(document).ready(abc);
+
+</script>
+</head>
+<body>
+<body>
+<input type="button" value="clone" id="b1"/>
+<input type="button" value="c" id="b2"/>
+<div id="d1" style="background-color:red;margin-bottom:20px;">
+<table id="t1" border="1px">
+<tr>
+<td>helooo</td>
+<td>byeeee</td>
+</tr>
+<tr>
+<td>haala</td>
+<td>madrid</td>
+</tr>
+</table>
+</div>
+<div id="d2"  style="background-color:red;margin-bottom:20px;">
+
+</div>
+</html>

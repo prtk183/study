@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="loadxmldoc.js"> 
+</script>
+</head>
+<body>
+
+<script>
+xmlDoc=loadXMLDoc("books.xml");
+
+newatt=xmlDoc.createAttribute("edition");
+newatt.nodeValue="first";
+
+x=xmlDoc.getElementsByTagName("title");
+x[0].setAttributeNode(newatt);
+
+document.write("Edition: ");
+document.write(x[0].getAttribute("edition"));
+
+</script>
+</body>
+</html>

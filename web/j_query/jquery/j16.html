@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+	function fun(){
+		
+		console.log(a);
+	}
+	function abc(){
+		//$("#d1").hide(2000);
+		//$("#d1").show(2000);
+		$("#d1").hide(1000).show(2000).fadeOut(3000);
+
+		//$("#d1").slideUp(2000);
+		//$("#d1").slideDown(2000);
+
+		//$("#d1").fadeOut(2000);
+		//$("#d1").fadeIn(2000);
+
+	}
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+	<div id="d1" style="background-color:yellow">
+		<p>para1</p>
+		<p>para2</p>
+		<p>para3</p>
+		<div>
+			<p>para1.1</p>
+			<p>para1.2</p>
+			<p>para1.3</p>
+		
+		</div>
+	</div>
+</body>
+</html>

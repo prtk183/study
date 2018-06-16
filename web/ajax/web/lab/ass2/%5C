@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<?php
+
+$a="user";
+$b="lucky";
+setcookie($a,$b,time()+(6000),"/" );
+?>
+<html>
+<body>
+<?php
+
+if(!isset($_COOKIE[$a]))
+{
+echo"not set";
+} 
+else
+{
+echo"$_COOKIE[$a]";
+}
+?>
+
+
+</body>
+</html>

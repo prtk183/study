@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+	//timers
+	i=0;
+	function fun1(){
+		
+		setTimeout(fun2,5000);
+	}
+	function fun2(){
+		document.getElementById("p1").style.color="red";
+	}
+	fun1();
+</script>
+</head>
+<body>
+	<p id="p1">hello</p>
+</body>
+</html>

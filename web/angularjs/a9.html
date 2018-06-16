@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script>
+	function ctrl1($scope){
+		$scope.x1="Mr. "+$scope.x1;
+		$scope.y="b";
+		$scope.btn1click=function(){
+			alert("hello "+ $scope.x1+" "+$scope.y);
+		};
+	}
+	function ctrl2($scope){
+		$scope.x1="aa";
+		$scope.y="bb";
+		$scope.btn1click=function(){
+			alert("hi "+ $scope.x1+" "+$scope.y);
+		};
+	}
+
+	var ang=angular.module("myApp",[]);
+	ang.controller("c1",ctrl1); //alias name,function name
+	ang.controller("c2",ctrl2);
+</script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="c1" ng-init="x1='Mr.';y=5">
+	<input ng-model="x1" />
+	<input ng-model="y" />
+	<input type="button" ng-click="btn1click()" value="click"/>
+	
+</div>
+
+<div ng-controller="c2">
+	<input ng-model="x1" />
+	<input ng-model="y" />
+	Hi <span>{{x1}} {{y}}</span>
+	<input type="button" ng-click="btn1click()" value="click"/>
+</div>
+
+</body>
+<html>

@@ -1,0 +1,6 @@
+
+<lora>
+<to>ram</to>
+<from>rahim</from>
+<body> ram rahim insan is in jail now!! ram rahim is the name of single person</body>
+</lora>

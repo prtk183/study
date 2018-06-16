@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f()
+{
+var a=prompt("enter the number 1");
+p=parseInt(a);
+var b=prompt("enter the number 2");
+q=parseInt(b);
+
+if(p<q)
+{
+document.getElementById("w").innerText=q;
+}
+else
+{
+document.getElementById("w").innerText=p;
+}
+}
+</script>
+</head>
+<body>
+<p id="w"></p>
+<input type="button" value="larger" onclick="f()"/>
+</body>
+</html>

@@ -1,0 +1,20 @@
+IP Addr: 10.180.8.220
+Username: dac(1-50)
+Password: actsdac1
+
+
+Mysql:
+
+Database: dac(1-50)
+Username: dac(1-50)
+password: actsdac1
+
+Create files on your home directory as <filename>.php
+
+Access the .php files through browser as:
+
+http://10.180.8.220/dac(1-50)/test.php
+
+Shell on Browser : https://10.180.8.220:4200/
+
+Download the Lab Questions & Morning PPT: http://10.180.8.220/henry/lab/

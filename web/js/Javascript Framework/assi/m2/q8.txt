@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function count()
+{
+var a=document.getElementByName("t");
+for(i=0;i<length(a);i++)
+{
+if(a[i]="a" ||a[i]="e" || a[i]="i" || a[i]="o" ||a[i]="u")
+(
+c=c+1;
+)
+}
+}
+
+
+document.getElementById("p").innerText=c;
+
+}
+</script>
+</head>
+<body>
+<p>count of vowels <id="p"> </p>
+<input type="text", name="t"/>
+<input type="button", value="count", onclick="count"/>
+</body>
+</html>

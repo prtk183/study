@@ -1,0 +1,31 @@
+ <html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+	function fun1(){
+		$("h1").toggle();
+	}
+	function fun2(){
+		$("h1").fadeToggle(1000);
+	}
+	function fun3(){
+		$("h1").slideToggle();
+	}
+	
+	function abc(){
+		$("#b1").click(fun1);
+		$("#b2").click(fun2);
+		$("#b3").click(fun3);
+	} 
+	$(document).ready(abc);
+</script>
+</head>
+<body>
+<h1>hello</h1>
+<input type="button" value="+b1" id="b1"/>
+<input type="button" value="b2" id="b2"/>
+<input type="button" value="b3" id="b3"/>
+
+</body>
+</html>

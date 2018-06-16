@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+function f()
+{
+$("#w").hide(2000);
+
+}
+
+</head>
+<body>
+<div id="w">
+<p>abc</p>
+<p>xyz</p>
+<p>tuv</p>
+<div>
+</body>
+</html>

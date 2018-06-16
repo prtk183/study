@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center">HTML5 Form: Input attributes</h1>
+
+<hr>
+<h2>Input : "autocomplete" attribute</h2>
+<form action="action_page.php">
+  First name:<br><input type="text" name="fname" autocomplete="on">
+  <br>
+  Last name:<br> <input type="text" name="lname" autocomplete="on">
+  <br>
+  E-mail:<br> <input type="email" name="email" autocomplete="on">
+  <br><br>
+  <input type="submit">
+</form>
+
+<hr>
+<h2>Input : "autofocus" attribute</h2>
+<form action="action_page.php">
+  First name:<br><input type="text" name="fname" autofocus><br>
+  Last name:<br><input type="text" name="lname"><br>
+  <br>
+  <input type="submit">
+</form>
+
+<hr>
+<h2>Input : "form" attribute</h2>
+<form action="action_page.php" id="form1">
+First name: <input type="text" name="fname"><br>
+<input type="submit" value="Submit">
+</form>
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+Last name: <input type="text" name="lname" form="form1">
+
+<hr>
+<h2>Input : "formaction" attribute</h2>
+<form action="action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="demo_admin.asp" value="Submit as admin">
+</form>
+
+<hr>
+<h2>Input : "height and width" attributes</h2>
+<form action="action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<hr>
+<h2>Input : "pattern" attribute</h2>
+<form action="action_page.php">
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="submit">
+</form>
+
+<hr>
+<h2>Input : "step" attribute</h2>
+<form action="action_page.php">
+  <input type="number" name="points" step="3">
+  <input type="submit">
+</form>
+</body>
+</html>

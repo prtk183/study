@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<style>
+.a1{
+	width:200px;
+	height:200px;
+	background-color:yellow;
+
+}
+.a2{
+	font-size:25px;
+}
+</style>
+<script>	
+	function f1(){
+		$("div").addClass("a1");
+		$("div").addClass("a2");
+	}
+	function f2(){
+		if($("div").hasClass("a1"))
+			$("div").removeClass("a1");
+	}
+</script>
+</head>
+<body>
+<div>fdsfdsf</div>
+<input type="button" value="b1" onclick="f1()"/>
+<input type="button" value="b2" onclick="f2()"/>
+
+</body>
+</html>
